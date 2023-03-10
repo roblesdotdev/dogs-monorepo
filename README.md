@@ -4,7 +4,7 @@ Fuil Stack Dogs Monorepo
 
 - Node `>=18`
 - Git `>=2.39.2`
-- PNPM `>=7.28.0`
+- PNPM `>=7.29.1`
 
 ### Worspaces
 
