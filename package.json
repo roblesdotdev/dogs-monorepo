@@ -15,5 +15,8 @@
     "sequelize"
   ],
   "author": "Aldo R. Robles",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
