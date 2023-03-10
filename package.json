@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "pi-dogs",
+  "version": "1.0.0",
+  "description": "PI-DOGS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "react",
+    "redux",
+    "sequelize"
+  ],
+  "author": "Aldo R. Robles",
+  "license": "ISC"
+}
