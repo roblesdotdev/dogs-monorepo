@@ -5,7 +5,7 @@
   "description": "PI-DOGS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pnpm run --parallel -r start"
   },
   "keywords": [
     "node",

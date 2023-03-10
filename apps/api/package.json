@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Backend for PI Dogs",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo Starting server"
+  },
+  "author": "Aldo R. Robles",
+  "license": "ISC"
+}

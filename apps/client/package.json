@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Frontend for PI Dogs",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo starting client..."
+  },
+  "author": "Aldo R. Robles",
+  "license": "ISC"
+}
