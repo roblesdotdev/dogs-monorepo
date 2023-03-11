@@ -23,19 +23,24 @@ async function getDbTemperaments() {
   return Temperaments.findAll();
 }
 
-async function findOrCreateDbDog(name, ...formData) {
-  return Dog.findOrCreate({
+async function findOrCreateDbDog(name, formData) {
+  const { lifeSpan, heightMin, heightMax, weightMin, weightMax, ...other } =
+    formData;
+  return Dogs.findOrCreate({
     where: {
       name,
     },
     defaults: {
-      ...formData,
+      life_span: lifeSpan,
+      height: `${heightMin} - ${heightMax}`,
+      weight: `${weightMin} - ${weightMax}`,
+      ...other,
     },
   });
 }
 
 async function getDbDogById(id) {
-  return Dog.findByPk(id, {
+  return Dogs.findByPk(id, {
     include: {
       model: Temperaments,
       through: { attributes: [] },

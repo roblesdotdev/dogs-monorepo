@@ -20,14 +20,14 @@ Content-Type: application/json
 {
   "name": "Boby",
   "image": "url image",
-  "lifeSpan": "life span",
-  "heightMin": "height min",
-  "heightMax": "height max",
-  "weightMin": "weight min",
-  "weightMax": "weight max",
+  "lifeSpan": "15",
+  "heightMin": "5.5",
+  "heightMax": "9.6",
+  "weightMin": "4.5",
+  "weightMax": "10.2",
   "temperaments": [
-    "temperament 1",
-    "temperament 2"
+    "1",
+    "2"
   ]
 }
 

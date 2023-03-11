@@ -44,7 +44,6 @@ function validateForm(req, res, next) {
     weightMin: +weightMin,
     weightMax: +weightMax,
     lifeSpan,
-    temperaments,
   };
   next();
 }

@@ -33,7 +33,7 @@ async function createDog(req, res) {
     return res.jsonError("Invalid temperaments provided.", 400);
   }
   const { name, ...formData } = res.form;
-  const [dogs, created] = await findOrCreateDbDog(name, ...formData);
+  const [dog, created] = await findOrCreateDbDog(name, formData);
   if (!created)
     return res.jsonError(`The dog ${res.form.name} already exists`, 400);
   await dog.setTemperaments(temperaments);
