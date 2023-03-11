@@ -37,3 +37,7 @@ Run the full monorepo with:
 ```
 pnpm start
 ```
+
+### DOCS
+
+- [API](https://github.com/roblesdotdev/dogs-monorepo/blob/main/docs/api.http)
