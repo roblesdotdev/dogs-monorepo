@@ -10,10 +10,12 @@ function getApiRoutes() {
   router.use("/dogs", getDogsRoutes());
   router.use("/temperaments", getTemperamentsRoutes());
 
+  router.use("/throw", (req, res) => {
+    throw new Error("Test throw response");
+  });
+
   router.use(function (_req, res) {
-    res
-      .status(404)
-      .json({ error: { message: "Sorry! Could not found page." } });
+    res.jsonError("Sorry! Could not found page.", 404);
   });
 
   return router;
