@@ -1,10 +1,17 @@
-### Get all dogs
+### Get list
 GET http://localhost:3001/dogs
 
+### Get list filtered success
+GET http://localhost:3001/dogs?name=ame
 
-### Get dog by id
-GET http://localhost:3001/dogs/some
+### Get list filtered error
+GET http://localhost:3001/dogs?name=nonexistence
 
+### Get dog by id success
+GET http://localhost:3001/dogs/10
+
+### Get dob by id error
+GET http://localhost:3001/dogs/invalid
 
 ### Create dog
 POST http://localhost:3001/dogs
@@ -13,14 +20,19 @@ Content-Type: application/json
 {
   "name": "Boby",
   "image": "url image",
-  "life_span": "life span",
-  "height": "height",
-  "weight": "weight",
+  "lifeSpan": "life span",
+  "heightMin": "height min",
+  "heightMax": "height max",
+  "weightMin": "weight min",
+  "weightMax": "weight max",
   "temperaments": [
     "temperament 1",
     "temperament 2"
   ]
 }
+
+### Get temperaments
+GET http://localhost:3001/temperaments
 
 ### 404 Response
 GET http://localhost:3001/not-found
