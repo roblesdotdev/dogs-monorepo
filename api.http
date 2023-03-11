@@ -1,0 +1,23 @@
+### Get all dogs
+GET http://localhost:3001/dogs
+
+
+### Get dog by id
+GET http://localhost:3001/dogs/some
+
+
+### Create dog
+POST http://localhost:3001/dogs
+Content-Type: application/json
+
+{
+  "name": "Boby",
+  "image": "url image",
+  "life_span": "life span",
+  "height": "height",
+  "weight": "weight",
+  "temperaments": [
+    "temperament 1",
+    "temperament 2"
+  ]
+}
