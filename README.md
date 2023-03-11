@@ -13,7 +13,22 @@ Fuil Stack Dogs Monorepo
 
 ### Development
 
-Run the following command at root level:
+Clone this repo.
+
+`git clone https://github.com/roblesdotdev/dogs-monorepo && cd dogs-monorepo`
+
+Install dependencies
+
+`pnpm install`
+
+Create environment file
+
+```
+mv apps/api/.env.sample apps/api/.env \
+&& mv apps/client/.env.sample apps/client/.env
+```
+
+Run the full monorepo with:
 
 ```
 pnpm start
