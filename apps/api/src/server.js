@@ -2,6 +2,7 @@ const express = require("express");
 const http = require("http");
 const cors = require("cors");
 const errorMiddleware = require("./middlewares/error-middleware");
+const { errorBuilder, successBuilder } = require("./middlewares/responses");
 require("express-async-errors"); // for async handlers
 
 // routes
@@ -27,8 +28,14 @@ app.use(
   })
 );
 
+// Custom Error and Success Responses
+app.use(errorBuilder);
+app.use(successBuilder);
+
+// Api Routes
 app.use(getApiRoutes());
 
+// Generic error handler
 app.use(errorMiddleware);
 
 const server = http.createServer(app);

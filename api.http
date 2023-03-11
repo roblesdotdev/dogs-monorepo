@@ -21,3 +21,9 @@ Content-Type: application/json
     "temperament 2"
   ]
 }
+
+### 404 Response
+GET http://localhost:3001/not-found
+
+### 500 Response
+GET http://localhost:3001/throw
