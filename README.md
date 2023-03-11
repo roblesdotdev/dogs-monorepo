@@ -1,4 +1,4 @@
-Fuil Stack Dogs Monorepo
+Fuil Stack Dogs Monorepo with PNPM workspaces.
 
 ### Requirements
 
