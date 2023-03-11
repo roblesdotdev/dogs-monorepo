@@ -8,6 +8,6 @@ if (NODE_ENV !== "production") {
 
 module.exports = {
   APP_PORT: Number(optionalFromEnv("APP_PORT", 3001)),
-  DB_FORCE: Boolean(optionalFromEnv("DB_FORCE", false)),
+  DB_FORCE: Boolean(optionalFromEnv("DB_FORCE", true)),
   DATABASE_URL: getDBURL(),
 };

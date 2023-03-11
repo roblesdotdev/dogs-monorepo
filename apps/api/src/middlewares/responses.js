@@ -29,7 +29,7 @@ function successBuilder(_req, res, next) {
     return res.status(status).json({
       success: true,
       status,
-      data: { ...data },
+      data: data,
     });
   };
 
