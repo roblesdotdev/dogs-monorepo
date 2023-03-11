@@ -31,6 +31,9 @@ Content-Type: application/json
   ]
 }
 
+### Get temperaments
+GET http://localhost:3001/temperaments
+
 ### 404 Response
 GET http://localhost:3001/not-found
 

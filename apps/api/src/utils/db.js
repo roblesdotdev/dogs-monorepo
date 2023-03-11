@@ -19,6 +19,10 @@ async function countDbTemperaments(temperaments) {
   });
 }
 
+async function getDbTemperaments() {
+  return Temperaments.findAll();
+}
+
 async function findOrCreateDbDog(name, ...formData) {
   return Dog.findOrCreate({
     where: {
@@ -44,4 +48,5 @@ module.exports = {
   countDbTemperaments,
   findOrCreateDbDog,
   getDbDogById,
+  getDbTemperaments,
 };
