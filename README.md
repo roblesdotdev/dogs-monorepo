@@ -15,11 +15,15 @@ Fuil Stack Dogs Monorepo
 
 Clone this repo.
 
-`git clone https://github.com/roblesdotdev/dogs-monorepo && cd dogs-monorepo`
+```
+git clone https://github.com/roblesdotdev/dogs-monorepo && cd dogs-monorepo
+```
 
 Install dependencies
 
-`pnpm install`
+```
+pnpm install
+```
 
 Create environment file
 
