@@ -38,6 +38,15 @@ Run the full monorepo with:
 pnpm start
 ```
 
+### Env Variables
+
+**API**
+
+- `APP_PORT`: server port. Default "3001".
+- `DB_DIALECT`: database dialect("sqlite", "postgres"). Default "sqlite".
+- `DB_URL`: database URL. Default "./db.sqlite".
+- `DB_SYNC`: sync database flag(1, 0). Default 1.
+
 ### DOCS
 
 - [API](https://github.com/roblesdotdev/dogs-monorepo/blob/main/docs/api.http)

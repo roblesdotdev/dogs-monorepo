@@ -10,7 +10,7 @@ function optionalFromEnv(envName, defaultValue = "", envObj = process.env) {
 function getDBURL(envObj = process.env) {
   // for testing use SQLITE
   if (envObj.NODE_ENV === "test")
-    return envObj.DATABASE_TEST_URL || "sqlite::memory:";
+    return envObj.DB_TEST_URL || "sqlite::memory:";
   const db_url = requireFromEnv("DB_URL", envObj);
   return db_url;
 }
