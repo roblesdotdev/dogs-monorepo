@@ -1,0 +1,3 @@
+## Dogs monorepo frontend client
+
+Work in progress...
