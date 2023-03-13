@@ -13,7 +13,11 @@ export default function Dog() {
     dispatch(fetchDogDetailIfNeeded(dogId))
   }, [dogId])
 
-  return <div>{isLoading ? <p>Loading...</p> : <DogDetail dog={dog} />}</div>
+  return (
+    <div>
+      {isLoading ? <p>Loading...</p> : dog ? <DogDetail dog={dog} /> : null}
+    </div>
+  )
 }
 
 function DogDetail({ dog }) {
