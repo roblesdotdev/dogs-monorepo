@@ -1,2 +1,6 @@
 export { default as WelcomeScreen } from './welcome'
 export { default as NotFoundScreen } from './not-found'
+export { default as DashboardScreen } from './dashboard'
+export { default as DogsScreen } from './dogs'
+export { default as DogScreen } from './dog'
+export { default as DogFormScreen } from './dog-form'

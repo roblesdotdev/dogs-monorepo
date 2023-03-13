@@ -15,7 +15,7 @@ export default function Welcome() {
       }}
     >
       <h1>Vite JSX Starter</h1>
-      <Button text="Get Started" onClick={() => navigate('/home')} />
+      <Button text="Get Started" onClick={() => navigate('/dashboard')} />
     </div>
   )
 }
