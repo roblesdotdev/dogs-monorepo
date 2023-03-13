@@ -21,13 +21,17 @@ function DogListing({ dogs }) {
       {dogs.map(dog => (
         <li key={dog.id}>
           <div>
-            <img
-              src={dog.image}
-              alt={dog.name}
-              style={{
-                width: '300px',
-              }}
-            />
+            {dog.image ? (
+              <img
+                src={dog.image}
+                alt={dog.name}
+                style={{
+                  width: '300px',
+                }}
+              />
+            ) : (
+              <span>No image found</span>
+            )}
             <Link to={`${dog.id}`}>
               <h3>{dog.name}</h3>
             </Link>

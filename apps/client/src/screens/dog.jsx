@@ -19,7 +19,11 @@ export default function Dog() {
 function DogDetail({ dog }) {
   return (
     <div>
-      <img style={{ width: '300px' }} src={dog.image} alt={dog.name} />
+      {dog.image ? (
+        <img style={{ width: '300px' }} src={dog.image} alt={dog.name} />
+      ) : (
+        <span>No image found</span>
+      )}
       <h3>{dog.name}</h3>
       <h4>Height: {dog.height}</h4>
       <h4>Weight: {dog.weight}</h4>
