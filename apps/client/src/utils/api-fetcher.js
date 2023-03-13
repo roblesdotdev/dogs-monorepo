@@ -14,9 +14,11 @@ async function fetcher(
     ...customConfig,
   }
 
-  return window.fetch(`${apiURL}/${endpoint}`, config).then(async response => {
+  const url = `${apiURL}${endpoint.startsWith('/') ? '' : '/'}${endpoint}`
+
+  return fetch(url, config).then(async response => {
+    const { data } = await response.json()
     if (response.ok) {
-      const data = await response.json()
       return data
     } else {
       return Promise.reject(data)

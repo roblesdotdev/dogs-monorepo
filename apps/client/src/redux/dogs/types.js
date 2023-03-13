@@ -1,0 +1,2 @@
+export const RECEIVE_DOGS = 'RECEIVE_DOGS'
+export const RECEIVE_DOG_DETAIL = 'RECEIVE_DOG_DETAIL'
