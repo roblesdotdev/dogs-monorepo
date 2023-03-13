@@ -12,6 +12,7 @@ export default function Home() {
       }}
     >
       <Navbar />
+      <Link to="dogs/new">Create dog</Link>
       <main>
         <Outlet />
       </main>

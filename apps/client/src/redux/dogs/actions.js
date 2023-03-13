@@ -16,7 +16,7 @@ const receiveDogDetail = data => ({
   payload: data,
 })
 
-// Not use directly fetchCountries
+// Not use directly fetchDogs
 const fetchDogs = query => dispatch => {
   dispatch(requestStart())
   return fetcher(`dogs?name=${query ?? ''}`)
